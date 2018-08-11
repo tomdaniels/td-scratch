@@ -1,7 +1,5 @@
 import React from 'react';
 import { UnControlled as CodeMirror } from 'react-codemirror2';
-import 'codemirror/mode/javascript/javascript';
-import 'codemirror/theme/material.css';
 import Header from './header';
 
 
