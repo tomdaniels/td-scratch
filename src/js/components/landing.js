@@ -28,7 +28,7 @@ class Landing extends React.Component {
         return (
             <React.Fragment>
                 {
-                    // TODO: seperate components, header & scratchpad.
+                    // TODO: remaining components, scratchpad, button.
                     /*
                         scratchpad: half CodeMirror, half Execution results
                         button: button to run functions entered in scratch pad
