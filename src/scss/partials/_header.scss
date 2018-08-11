@@ -1,0 +1,12 @@
+.scratchpad__header-wrap {
+  display: flex;
+  justify-content: center;
+  font-size: $size-lar;
+  color: $off-white;
+  background-color: darken($background, 2);
+  padding: 50px;
+}
+
+.scratchpad__header-item {
+  padding: 10px;
+}
