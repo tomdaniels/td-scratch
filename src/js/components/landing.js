@@ -11,12 +11,6 @@ class Landing extends React.Component {
         }
     }
 
-    updateCode = (event) => {
-        this.setState(() => ({
-            code: event.value
-        }));
-    }
-
     render() {
         const options = {
             mode: 'javascript',
@@ -37,9 +31,6 @@ class Landing extends React.Component {
                 <CodeMirror
                     value={this.state.code}
                     options={options}
-                    onBeforeChange={(editor, data, value) => {
-                        this.setState({value});
-                    }}
                     onChange={(editor, data, value) => {
                     }}
                 />
