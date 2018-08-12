@@ -1,7 +1,5 @@
 import React from 'react';
 import { UnControlled as CodeMirror } from 'react-codemirror2';
-import 'codemirror/mode/javascript/javascript';
-import 'codemirror/theme/material.css';
 import Header from './header';
 
 
@@ -11,12 +9,6 @@ class Landing extends React.Component {
         this.state = {
             code: 'console.log(\'hello world\')'
         }
-    }
-
-    updateCode = (event) => {
-        this.setState(() => ({
-            code: event.value
-        }));
     }
 
     render() {
@@ -39,9 +31,6 @@ class Landing extends React.Component {
                 <CodeMirror
                     value={this.state.code}
                     options={options}
-                    onBeforeChange={(editor, data, value) => {
-                        this.setState({value});
-                    }}
                     onChange={(editor, data, value) => {
                     }}
                 />
